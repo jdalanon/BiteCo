@@ -116,7 +116,7 @@ section{
     margin-bottom:50px;
 }
 
-.menus {
+.menus .card {
     display: flex;
     gap: 20px;              /* Space between cards */
     flex-wrap: wrap;        /* Moves cards to the next row if needed */
