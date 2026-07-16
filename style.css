@@ -56,7 +56,7 @@ header{
     color:#4f46e5;
 }
 
-.menus-btn{
+.menu-btn{
     display:none;
     font-size:28px;
     cursor:pointer;
@@ -109,11 +109,25 @@ section{
     padding:100px 10%;
 }
 
-.menus h2,
+.menu h2,
 .about h2,
 .contact h2{
     text-align:center;
     margin-bottom:50px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .card {
@@ -125,10 +139,6 @@ section{
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    display: grid;
-    gap: 20px;              /* Space between cards */
-    justify-content: center; /* Center the cards */
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .card img {
@@ -257,7 +267,7 @@ footer{
     text-align:center;
 }
 
-.menus-btn{
+.menu-btn{
     display:block;
 }
 
