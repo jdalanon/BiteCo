@@ -235,21 +235,15 @@ section{
 
 .contact input,
 .contact textarea {
-    width: 100%;
-    padding: 1rem 1.2rem;
-    border: 2px solid #E8DED4;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-family: inherit;
-    background: #FFFDFB;
-    color: #4B2E2B;
-    outline: none;
-    transition: 0.3s ease;
+    border: 2px solid #8B5E3C !important;
+    color: #4B2E2B !important;
+    background: #fff !important;
 }
 
 .contact input::placeholder,
 .contact textarea::placeholder {
-    color: #A08974;
+    color: #6F4E37;
+    opacity: 1;
 }
 
 .contact input:focus,
