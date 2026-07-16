@@ -19,9 +19,6 @@ document
 
 });
 
-document.querySelectorAll(".card,.about-content,.contact form")
-.forEach(el=>observer.observe(el));
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -29,3 +26,6 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
+
+document.querySelectorAll(".card, .about-content, .contact form")
+    .forEach(el => observer.observe(el));
