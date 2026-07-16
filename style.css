@@ -105,8 +105,10 @@ header{
 
 /* Sections */
 
-section{
-    padding:100px 10%;
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .menu h2,
