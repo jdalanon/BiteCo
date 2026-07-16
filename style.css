@@ -233,53 +233,75 @@ section{
 
 /* Inputs */
 
-.contact input,
-.contact textarea {
-    border: 2px solid #8B5E3C !important;
-    color: #4B2E2B !important;
-    background: #fff !important;
+.contact {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
 }
 
-.contact input::placeholder,
-.contact textarea::placeholder {
-    color: #6F4E37;
-    opacity: 1;
+.contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #222;
 }
 
-.contact input:focus,
-.contact textarea:focus {
-    border-color: #8B5E3C;
-    box-shadow: 0 0 10px rgba(139, 94, 60, 0.15);
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
-.contact textarea {
-    min-height: 180px;
+/* Input & Textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    color: #222;              /* Dark text */
+    background: #fff;
+    border: 2px solid #444;   /* Dark border */
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+/* Placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #777;
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.25);
+}
+
+/* Prevent resizing if desired */
+.contact-form textarea {
     resize: vertical;
+    min-height: 150px;
 }
 
 /* Button */
-
-.contact button {
-    background: #6F4E37;
-    color: #fff;
+.contact-form button {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
     border: none;
-    padding: 1rem;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-.contact button:hover {
-    background: #4B2E2B;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(75, 46, 43, 0.25);
-}
-
-.contact button:active {
-    transform: scale(0.98);
+.contact-form button:hover {
+    background: #0056b3;
 }
 
 footer{
