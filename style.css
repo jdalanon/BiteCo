@@ -56,7 +56,7 @@ header{
     color:#4f46e5;
 }
 
-.menu-btn{
+.menus-btn{
     display:none;
     font-size:28px;
     cursor:pointer;
@@ -109,7 +109,13 @@ section{
     padding:100px 10%;
 }
 
-.menu h2,
+.menus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menus h2,
 .about h2,
 .contact h2{
     text-align:center;
@@ -253,7 +259,7 @@ footer{
     text-align:center;
 }
 
-.menu-btn{
+.menus-btn{
     display:block;
 }
 
