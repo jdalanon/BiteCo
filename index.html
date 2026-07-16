@@ -3,36 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bite Co Official</title>
-</head>
+    <title>NovaTech</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
 <header>
-    <h1>Bite Co</h1>
-    <p>Fresh coffee and snacks on wheels</p>
+    <nav class="navbar">
+        <h2 class="logo">NovaTech</h2>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-btn">&#9776;</div>
+    </nav>
 </header>
 
-<section>
-    <h2>About Us</h2>
-    <p>
-        Sunny Side Cafe Cart is a small neighborhood coffee cart serving
-        freshly brewed drinks and simple homemade snacks. 
-        We focus on quality ingredients, friendly service, and affordable prices.
-    </p>
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>Build Amazing Digital Experiences</h1>
+
+        <p>
+            Create beautiful websites faster with our modern web solutions.
+            Responsive, fast, and designed for success.
+        </p>
+
+        <a href="#features" class="btn">Get Started</a>
+    </div>
+
 </section>
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
-</nav>
+
+<section class="features" id="features">
+
+    <h2>Why Choose Us</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>⚡ Fast</h3>
+            <p>Optimized performance for maximum speed.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Responsive</h3>
+            <p>Looks amazing on desktop, tablet, and mobile.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Secure</h3>
+            <p>Built using modern best security practices.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <h2>About Us</h2>
+
+        <p>
+            NovaTech helps startups and businesses build scalable,
+            high-quality web applications with beautiful user experiences.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required>
+
+        <input
+            type="email"
+            placeholder="Email Address"
+            required>
+
+        <textarea
+            placeholder="Message"
+            rows="6"
+            required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
 <footer>
-    <p>© 2026 Sunny Side Cafe Cart</p>
+
+    <p>© 2026 NovaTech. All Rights Reserved.</p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
