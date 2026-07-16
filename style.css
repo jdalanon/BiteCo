@@ -170,6 +170,7 @@ section{
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: auto; /* Pushes the button to the bottom of the card */
 }
 
 .card button:hover {
