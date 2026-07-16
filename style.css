@@ -129,7 +129,7 @@ section{
 
 .card img {
     width: 50%;
-    height: 50px;
+    height: 150px;
     object-fit: contain;
     border-radius: 8px;
 }
