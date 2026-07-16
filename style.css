@@ -125,9 +125,8 @@ section{
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    display: flex;
+    display: wrap;
     gap: 20px;              /* Space between cards */
-    flex-wrap: wrap;        /* Moves cards to the next row if needed */
     justify-content: center; /* Center the cards */
 }
 
