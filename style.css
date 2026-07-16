@@ -315,11 +315,6 @@ footer{
 
 .card,
 .about-content,
-.contact form{
-    opacity:0;
-    transform:translateY(40px);
-    transition:1s;
-}
 
 .show{
     opacity:1;
