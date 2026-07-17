@@ -19,6 +19,7 @@ document
 
 });
 
+// Menu Redirection 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -29,3 +30,16 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".card, .about-content, .contact form")
     .forEach(el => observer.observe(el));
+
+// Buy Now Button
+let cart = [];
+
+function addToCart(name, price) {
+    cart.push({
+        name: name,
+        price: price
+    });
+
+    alert(name + " has been added to your cart!");
+    console.log(cart);
+}
