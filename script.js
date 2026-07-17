@@ -31,15 +31,69 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".card, .about-content, .contact form")
     .forEach(el => observer.observe(el));
 
-// Buy Now Button
+// Cart 
 let cart = [];
 
-function addToCart(name, price) {
+function addToCart(name, price){
+
     cart.push({
-        name: name,
-        price: price
+        name:name,
+        price:price
     });
 
-    alert(name + " has been added to your cart!");
-    console.log(cart);
+    updateCart();
+
+}
+
+function updateCart(){
+
+    const cartItems =
+        document.getElementById("cart-items");
+
+    const total =
+        document.getElementById("total");
+
+    const count =
+        document.getElementById("cart-count");
+
+    cartItems.innerHTML="";
+
+    let totalPrice=0;
+
+    cart.forEach(item=>{
+
+        totalPrice += item.price;
+
+        cartItems.innerHTML += `
+            <div class="cart-item">
+                <span>${item.name}</span>
+                <span>₱${item.price.toFixed(2)}</span>
+            </div>
+        `;
+
+    });
+
+    total.innerText =
+        totalPrice.toFixed(2);
+
+    count.innerText = cart.length;
+
+}
+
+function checkout(){
+
+    if(cart.length===0){
+
+        alert("Your cart is empty.");
+
+        return;
+
+    }
+
+    alert("Thank you for ordering from Bite Co!");
+
+    cart=[];
+
+    updateCart();
+
 }
