@@ -9,17 +9,22 @@ menuBtn.addEventListener("click", () => {
 // Cart 
 let cart = [];
 
-function addToCart(name, price){
+function addToCart(name, price, button){
 
     cart.push({
         name:name,
         price:price
     });
 
-    alert("Added to Cart!");
-
     updateCart();
 
+    button.textContent = "✓ Added!";
+    button.disabled = true;
+
+    setTimeout(() => {
+        button.textContent = "Buy Now";
+        button.disabled = false;
+    }, 2000);
 
 }
 

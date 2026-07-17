@@ -321,13 +321,15 @@ footer{
 
 .cart-section button {
     width: 30%;
-    padding: 12px;
     border: none;
     background: #007bff;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     margin-top: auto; /* Pushes the button to the bottom of the card */
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 30px;
 }
 
 .cart-section button:hover {
