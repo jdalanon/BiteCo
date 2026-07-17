@@ -318,3 +318,18 @@ footer{
 #cart-count{
     color:red;
 }
+
+.cart-section button {
+    width: 30%;
+    padding: 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+.cart-section button:hover {
+    background: #0056b3;
+}

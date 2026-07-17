@@ -16,7 +16,10 @@ function addToCart(name, price){
         price:price
     });
 
+    alert("Added to Cart!");
+
     updateCart();
+
 
 }
 
