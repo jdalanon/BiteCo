@@ -33,8 +33,23 @@ header{
     height:70px;
 }
 
-.logo{
-    color:#4f46e5;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;   /* Makes it circular (optional) */
+    object-fit: cover;
+}
+
+.logo h2 {
+    color: #4f46e5;
+    font-size: 28px;
+    margin: 0;
 }
 
 .nav-links{
