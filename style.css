@@ -73,6 +73,17 @@ header{
     background:linear-gradient(135deg,#4f46e5,#06b6d4);
     color:white;
     padding:20px;
+
+    /* Background Image */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ),
+    url("images/coffee.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero h1{
