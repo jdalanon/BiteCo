@@ -29,10 +29,10 @@ BiteCo/
 │   ├── caramel.jpg
 │   ├── coffee.jpg
 │   └── ...
+│── README.md
 │── index.html
 │── script.js
-│── style.css
-└── README.md
+└── style.css
 ```
 
 ## 🚀 Getting Started
