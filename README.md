@@ -56,6 +56,19 @@ images/homepage_web_preview.png
 images/homepage_sp_preview.png
 ```
 
+## ⚠️ Current Limitations
+
+This project is a front-end prototype and does not include:
+
+* User authentication
+* Database integration
+* Payment gateway integration
+* Inventory management
+* Order history
+* Admin dashboard
+* Backend APIs
+
+
 ## 🎯 Future Improvements
 
 * Administrator Dashboard
